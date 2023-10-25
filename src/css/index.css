@@ -7,8 +7,15 @@
   font-family: "Montserrat", sans-serif;
 }
 
+:root{
+  --primary-color: #FF725E;
+  --second-color: rgba(255, 152, 108, 0.25);
+  --white-color: #ffff;
+  --copy-color: #263138;
+}
+
 header {
-  background-color: #FF725E;
+  background-color: var(--primary-color);
 }
 
 .nav-bar{
@@ -40,7 +47,7 @@ header {
 .nav-link{
   text-decoration: none;
   font-size: 1.15rem;
-  color: white;
+  color: var(--white-color);
   font-weight: 600;
 }
 
@@ -83,14 +90,14 @@ h2 {
 
 .button-1 {
   padding: 16px 32px;
-  background-color: #FF725E;
+  background-color: var(--primary-color);
   text-decoration: none;
-  color: white;
+  color: var(--white-color);
   border-radius: 8px;
 }
 
 .button-2 {
-  color: #FF725E;
+  color: var(--primary-color);
   background-color: transparent;
   padding: 16px 32px;
   text-underline-offset: 4px;
@@ -134,7 +141,7 @@ h2 {
 }
 
 .duvida h3 {
-  border: 2px solid #FF725E;
+  border: 2px solid var(--primary-color);
   border-radius: 8px;
   cursor: pointer;
   padding: 24px 40px 24px 24px;
@@ -147,9 +154,9 @@ h2 {
 }
 
 .duvida .paragrafo {
-  border-right: 1px solid #FF725E;
-  border-bottom: 1px solid #FF725E;
-  border-left: 1px solid #FF725E;
+  border-right: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  border-left: 1px solid var(--primary-color);
   border-radius: 0 0 8px 8px;
   margin-top: -8px;
   padding: 0 24px;
@@ -166,7 +173,7 @@ h2 {
 }
 
 footer {
-  background-color: rgba(255, 152, 108, 0.25);
+  background-color: var(--second-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -182,7 +189,7 @@ footer .titles {
 }
 
 footer nav a {
-  color: #263138;
+  color: var(--copy-color);
   display: block;
   margin-bottom: 16px;
   text-decoration: none;
@@ -194,18 +201,18 @@ footer p {
 }
 
 footer p a {
-  color: #263138;
+  color: var(--copy-color);
   text-decoration: none;
 }
 
 #copyright {
-  background-color: #263138;
+  background-color: var(--copy-color);
   text-align: center;
   padding: 24px;
-  color: white;
+  color: var(--white-color);
 }
 
 #copyright a {
   text-decoration: none;
-  color: white;
+  color: var(--white-color);
 }

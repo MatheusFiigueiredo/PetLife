@@ -218,6 +218,9 @@
 
 @media screen and (max-width: 420px) {
 
+  .absolute{
+    display: none;
+  }
 
   #inicio  .btns {
     display: flex;
