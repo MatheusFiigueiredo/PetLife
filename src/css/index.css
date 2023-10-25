@@ -8,24 +8,47 @@
 }
 
 header {
+  background-color: #FF725E;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+}
+
+.logo{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 24px 40px;
-  background-color: #FF9A6C;
 }
 
-header a {
+.nav-list{
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-itens{
+  margin: 0 15px;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-size: 1.15rem;
   color: white;
   font-weight: 600;
-  padding-left: 40px;
-  text-decoration: none;
 }
 
-i#burguer {
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
+.mobile-menu-icon{
+  display: none;
+}
+
+.mobile-menu{
   display: none;
 }
 

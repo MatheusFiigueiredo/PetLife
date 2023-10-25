@@ -12,17 +12,37 @@
 
 <body>
     <header>
-        <a href="index.html">
-            <img src="./src/assets/logo-white.svg" alt="PetLife">
-        </a>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./src/assets/logo-white.svg" alt="PetLife">
+                </a>
+            </div>
+            
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-itens"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-itens"><a class="nav-link" href="#clinica">Clínica</a></li>
+                    <li class="nav-itens"><a class="nav-link" href="#farmacia">Farmácia</a></li>
+                    <li class="nav-itens"><a class="nav-link" href="#duvidas">Dúvidas</a></li>
+                </ul>
+            </div>
 
-        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-        <nav id="nav">
-            <a href="#inicio">Início</a>
-            <a href="#clinica">Clínica</a>
-            <a href="#farmacia">Farmácia</a>
-            <a href="#duvidas">Dúvidas</a>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./src/assets/menu_white_24dp.svg"></button>
+            </div>
+
         </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-itens"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-itens"><a class="nav-link" href="#clinica">Clínica</a></li>
+                <li class="nav-itens"><a class="nav-link" href="#farmacia">Farmácia</a></li>
+                <li class="nav-itens"><a class="nav-link" href="#duvidas">Dúvidas</a></li>
+            </ul>
+        </div>
+
     </header>
     <main>
         <section id="inicio">

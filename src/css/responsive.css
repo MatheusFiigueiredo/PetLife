@@ -35,13 +35,6 @@
 
 @media screen and (max-width: 950px) {
 
-  header {
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0;
-    height: 120px;
-  }
-
   #inicio {
     flex-direction: column-reverse;
     padding: 60px 80px;
@@ -103,18 +96,39 @@
 
 @media screen and (max-width: 768px) {
 
-  header {
-    flex-direction: row;
-    height: 100px;
-    justify-content: space-around;
+  .nav-bar {
+    padding: 1.5rem 4rem;
   }
 
-  header .menu {
+  .nav-itens {
     display: none;
   }
 
-  header .openNav {
+  .mobile-menu-icon{
     display: block;
+  }
+
+  .mobile-menu-icon button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+  .mobile-menu .nav-itens{
+    display: block;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .open{
+    display: block;
+    padding-top: 15px;
   }
 
   #inicio {
@@ -149,6 +163,11 @@
 
   #inicio {
     padding: 30px 10px 0;
+  }
+
+  #inicio h1,
+  p {
+    text-align: center;
   }
 
   #clinica ul {
@@ -199,22 +218,16 @@
 
 @media screen and (max-width: 420px) {
 
-  nav {
-    display: none;
-  }
 
-  .nav.open {}
-
-  i#burguer {
-    color: white;
-    display: block;
-    padding: 10px;
-    z-index: 10;
-  }
-
-  #inicio .about .btns {
+  #inicio  .btns {
+    display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 25px;
+  }
+
+  #inicio img{
+    width: 350px;
+    height: 350px;
   }
 
   #inicio img[src*=start] {
